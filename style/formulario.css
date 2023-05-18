@@ -1,0 +1,69 @@
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 0 #242724 ;
+    padding: 15px;
+    border-radius: 15px;
+    min-width:420px ;
+    max-width:900px ;
+  }
+  form{
+    border: 3px solid rgb(16, 161, 187);
+  }
+  
+  .inputBox{
+    position: relative;
+    margin: 6px;
+  }
+  .inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  .labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .inputUser:focus ~ .labelInput,
+  .inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(16, 161, 187);
+  }
+
+  .inbox{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    margin-bottom: 10px;
+  }
+  
+  #btnSalvar{
+    background-image: linear-gradient(to right,rgb(33, 105, 122), rgb(6, 129, 98));
+    width: 90%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  #btnSalvar:hover{
+    background-image: linear-gradient(to right,rgb(52, 146, 134), rgb(22, 211, 139));
+  }
+
+p, #opcao{
+    margin: 10px 0px 1px 6px;
+}
